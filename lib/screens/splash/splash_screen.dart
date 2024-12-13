@@ -15,19 +15,19 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   int currentPage = 0;
-  List<Map<String, String>> splashData = [
+  List<Map<String, String>> splashData = [{
 
-      "text": "Improve crop management with tools that offer clear recommendations on planting schedules, irrigation, and fertilization, ensuring better yields and reduced waste.",
+      "text": "Improve crop management with tools that offer \nclear recommendations on planting \nschedules, irrigation, and fertilization, ensuring \nbetter yields and reduced waste.",
       "image": "assets/images/image_1.png"
     },
     {
       "text":
           "We help people conect with store \naround United State of America",
-      "image": "assets/images/splash_2.png"
+      "image": "assets/images/image_2.png"
     },
     {
       "text": "We show the easy way to shop. \nJust stay at home with us",
-      "image": "assets/images/splash_3.png"
+      "image": "assets/images/image_3.png"
     },
   ];
   @override
@@ -81,9 +81,9 @@ class _SplashScreenState extends State<SplashScreen> {
                       const Spacer(flex: 3),
                       ElevatedButton(
                         onPressed: () {
-                          Navigator.pushNamed(context, SignInScreen.routeName);
+                          // Navigator.pushNamed(context, SignInScreen.routeName);
                         },
-                        child: const Text("Continue"),
+                        child: const Text("Next"),
                       ),
                       const Spacer(),
                     ],

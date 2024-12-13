@@ -20,8 +20,14 @@ class _SplashContentState extends State<SplashContent> {
     return Column(
       children: <Widget>[
         const Spacer(),
+        Image.asset(
+          widget.image!,
+          height: 265+100,
+          width: 235+100,
+        ),
         const Text(
-          "Smart Rice",
+          "Improved Crop \nManagement",
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 32,
             color: kPrimaryColor,
@@ -31,12 +37,6 @@ class _SplashContentState extends State<SplashContent> {
         Text(
           widget.text!,
           textAlign: TextAlign.center,
-        ),
-        const Spacer(flex: 2),
-        Image.asset(
-          widget.image!,
-          height: 265,
-          width: 235,
         ),
       ],
     );
